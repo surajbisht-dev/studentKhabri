@@ -21,12 +21,11 @@ async function login(req, res) {
     expiresIn: "7d",
   });
 
-  const isProd = process.env.NODE_ENV === "production";
-
   res.cookie("token", token, {
     httpOnly: true,
-    secure: isProd,
-    sameSite: isProd ? "none" : "lax",
+    secure: true,
+    sameSite: "none",
+    path: "/",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 
@@ -34,12 +33,11 @@ async function login(req, res) {
 }
 
 function logout(req, res) {
-  const isProd = process.env.NODE_ENV === "production";
-
   res.clearCookie("token", {
     httpOnly: true,
-    secure: isProd,
-    sameSite: isProd ? "none" : "lax",
+    secure: true,
+    sameSite: "none",
+    path: "/",
   });
 
   res.json({ message: "Logged out" });
