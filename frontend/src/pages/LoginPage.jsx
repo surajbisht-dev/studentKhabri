@@ -16,7 +16,7 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await api.post("/api/auth/login", { email, password });
-      nav("/leads", { replace: true }); // ✅ important
+      nav("/leads", { replace: true });
     } catch (e2) {
       setErr(e2?.response?.data?.message || "Login failed");
     } finally {
