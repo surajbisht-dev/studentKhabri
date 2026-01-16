@@ -72,7 +72,7 @@ npm install
 Create `frontend/.env`:
 
 ```env
-VITE_API_URL=http://localhost:8080
+VITE_API_URL=http://localhost:5000 || https://studentkhabri.onrender.com
 ```
 
 Run frontend:
@@ -99,4 +99,4 @@ Open: `http://localhost:5173`
 ## Links
 
 * GitHub Repo: https://github.com/surajbisht-dev/studentKhabri.git
-* Deployed App: *add link*
+* Deployed App: https://studentkhabri-1.onrender.com
