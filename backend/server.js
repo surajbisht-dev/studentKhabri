@@ -32,7 +32,7 @@ app.use(
   })
 );
 
-app.options("*", cors());
+app.options("/*", cors());
 
 app.get("/", (req, res) =>
   res.json({ ok: true, service: "Lead Dashboard API" })
