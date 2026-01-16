@@ -93,10 +93,10 @@ Open: `http://localhost:5173`
 
 ## Deployment
 
-* Backend: Render/Railway (set backend env vars)
-* Frontend: Vercel/Netlify (set `VITE_API_URL` to backend URL)
+* Backend: Render
+* Frontend: Render
 
 ## Links
 
-* GitHub Repo: *add link*
+* GitHub Repo: https://github.com/surajbisht-dev/studentKhabri.git
 * Deployed App: *add link*
